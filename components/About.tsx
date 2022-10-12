@@ -24,7 +24,7 @@ transition={{
 }}
 whileInView={{ opacity: 1, x: 0 }}
 viewport={{ once: true }}
-src="https://avatars.githubusercontent.com/u/83706868?s=400&u=7f0d460392c053314271776223b3427271350d6d&v=4"
+src="https://avatars.githubusercontent.com/u/83706868?v=4"
 className="-mb:-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
 />
 <div className="space-y-10 px-0 md:px-10">
