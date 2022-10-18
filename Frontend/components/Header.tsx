@@ -2,9 +2,12 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion";
 import Link from 'next/link';
-type Props = {}
+import { Social } from '../typings';
+type Props = {
+    socials: Social[]
+};
 
-export default function Header({}: Props) {
+export default function Header({ socials }: Props) {
   return (
     <header className="sticky top-0 p-5 flex items-center justify-between max-w-7xl mx-auto z-20 xl:items-center">
         <motion.div
@@ -23,18 +26,14 @@ export default function Header({}: Props) {
         }}
         className="flex flex-row items-center">
             {/* Social Icons */}
-            <SocialIcon url="https://twitter.com/yasirobai99" 
+            {socials.map((social) => (
+                <SocialIcon
+                key={social._id} 
+                url={social.url} 
             fgColor="gray"
             bgColor="transparent"
             />
-            <SocialIcon url="https://www.linkedin.com/in/yasir-obaibullah99" 
-            fgColor="gray"
-            bgColor="transparent"
-            />
-            <SocialIcon url="https://github.com/YasirObaibullah99" 
-            fgColor="gray"
-            bgColor="transparent"
-            />
+            ))}
         </motion.div>
 
 <Link href={"#contact"} >

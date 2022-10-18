@@ -2,14 +2,19 @@ import React from "react";
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from '../components/BackgroundCircles'
 import Link from "next/link";
+import { PageInfo } from "../typings";
+import { url } from "inspector";
+import { urlFor } from "../sanity";
 
 
-type Props = {};
+type Props = {
+    pageInfo: PageInfo
+};
 
-export default function Hero({}: Props) {
+export default function Hero({ pageInfo }: Props) {
     const [text, count] = useTypewriter({
         words: [
-            "Hi, The Name's Yasir Obaidullah",
+            `Hi, The Name's ${pageInfo?.name}`,
             "Guy-Who-loves-Coke.tsx",
             "<ButLovesToCodeMore />",
         ],
@@ -22,11 +27,12 @@ export default function Hero({}: Props) {
     <BackgroundCircles />
     <img
     className="relative rounded-full h-32 w-32 mx-auto object-cover"
-    src="https://avatars.githubusercontent.com/u/83706868?s=400&u=7f0d460392c053314271776223b3427271350d6d&v=4" alt=""
+    src={urlFor(pageInfo?.heroImage).url()} 
+    alt=""
     />
     <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px] ">
-        full-stack developer
+        {pageInfo?.role}
         </h2>
     <h1 className="text-5xl lg:text-6xl font-semibold px-10">
 <span className="mr-3">{text}</span>
