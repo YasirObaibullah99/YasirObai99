@@ -56,7 +56,7 @@ export interface Project extends SanityBody {
     image: Image;
     linkToBuild: string;
     summary: string;
-    techologies: Technology[];
+    technologies: Technology[];
 }
 
 export interface Social extends SanityBody {
