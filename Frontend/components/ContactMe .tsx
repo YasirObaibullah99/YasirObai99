@@ -36,7 +36,7 @@ export default function ContactMe({ }: Props) {
                 <div className="space-y-7 xl:pt-6 xl:pb-6">
                     <div className="flex items-center space-x-5 justify-center">
                         <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-                        <p className="text-2xl">+91 9708538726</p>
+                        <p className="text-2xl">+91 97085xxxxx</p>
                     </div>
 
                     <div className="flex items-center space-x-4 justify-center">
@@ -46,7 +46,7 @@ export default function ContactMe({ }: Props) {
 
                     <div className="flex items-center space-x-5 justify-center">
                         <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
-                        <p className="text-2xl">123 kslayout</p>
+                        <p className="text-2xl">Bengaluru</p>
                     </div>
                 </div>
                 <div className="">
