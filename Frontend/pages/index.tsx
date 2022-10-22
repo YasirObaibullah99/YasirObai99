@@ -63,7 +63,7 @@ const Home = ({ pageInfo, experiences, skills, projects, socials  }: Props) => {
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
             <img className=" h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer" 
-            src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0eb99784516701.5d5f046b5b1e3.png" 
+            src="https://im4.ezgif.com/tmp/ezgif-4-01fa1496df.png"
             alt="" />
           </div>
         </footer>
